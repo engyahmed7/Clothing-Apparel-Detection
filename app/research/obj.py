@@ -43,20 +43,11 @@ class MultiClassObj:
                                                                          use_display_name=True)
         self.category_index = label_map_util.create_category_index(self.categories)
         self.class_names_mapping = {
-            1: "earring", 2: "dress", 3: "sunglasses", 4: "hat", 5: "jacket", 
-            6: "shorts", 7: "t-shirt", 8: "pants", 9: "shoes", 10: "tie", 
-            11: "watch"
-            # , 12: "skirt", 13: "sweatshirt", 14: "pullover", 
-            # 15: "blouse", 16: "sweater", 17: "coat", 18: "tank_top", 
-            # 19: "blazer", 20: "hoodie", 21: "sandals", 22: "heels", 
-            # 23: "boots", 24: "loafers", 25: "slippers", 26: "socks",
-            # 27: "gloves", 28: "scarf", 29: "bag", 30: "umbrella", 31: "belt",
-            # 32: "sneakers"
+            1: "earring", 2: "GirlsTopWear", 3: "sunglasses", 4: "hat", 5: "jacket", 
+            6: "shorts", 7: "MensTopWear", 8: "pant", 9: "shoes", 10: "tie", 
+            11: "watch" 
+           
         }
-
-        #  1: "ear_ring", 2: "GirlsTopWear", 3: "glass", 4: "hat", 5: "Jacket", 6: "MensShorts", 7: "MensTopWear",
-            # 8: "Pant", 9: "shoes", 10: "tie", 11: "watch"
-
 
         od_graph_def = tf.compat.v1.GraphDef()
         self.detection_graph = tf.Graph()
